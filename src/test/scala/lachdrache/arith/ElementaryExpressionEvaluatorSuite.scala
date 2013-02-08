@@ -1,10 +1,8 @@
 package lachdrache.arith
 
-import org.scalatest.FunSuite
+class ElementaryExpressionEvaluatorSuite extends AddSubExpressionEvaluatorSuite {
 
-class ElementaryExpressionEvaluatorSuite extends FunSuite {
-
-  val eval = new ElementaryExpressionEvaluator
+  override val eval = new ElementaryExpressionEvaluator
 
   test("addition") {
     assert(eval("13+7") === 20)
