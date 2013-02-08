@@ -4,7 +4,7 @@ import org.scalatest.FunSuite
 
 class AddSubExpressionEvaluatorSuite extends FunSuite {
 
-  val eval = AddSubExpressionEvaluator
+  val eval = new AddSubExpressionEvaluator
 
   test("the number 3") {
     assert(eval("3") === 3)
