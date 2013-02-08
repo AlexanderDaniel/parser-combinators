@@ -9,7 +9,8 @@ Simple examples using Scala's parser combinators:
 
 Resources
 =========
-* [Scaladoc](http://www.scala-lang.org/api/current/index.html#scala.util.parsing.combinator.Parsers)
+* [Parsers Scaladoc](http://www.scala-lang.org/api/current/index.html#scala.util.parsing.combinator.Parsers)
+* [RegexParsers Scaladoc](http://www.scala-lang.org/api/current/index.html#scala.util.parsing.combinator.RegexParsers) with a nice example similar to ElementaryWithParenthesesExpressionEvaluator
 * [Programming in Scala](http://www.artima.com/shop/programming_in_scala) chapter 33
 * [Scala for the Impatient](http://www.horstmann.com/scala/) chapter 19
 * [Functional Programming in Scala](http://manning.com/bjarnason/) chapter 9
