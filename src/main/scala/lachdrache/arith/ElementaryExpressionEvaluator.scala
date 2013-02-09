@@ -2,9 +2,7 @@ package lachdrache.arith
 
 class ElementaryExpressionEvaluator extends AddSubExpressionEvaluator {
 
-  override def expr: Parser[Int] = term ~ rep(("+" | "-") ~ term) ^^ {
-    case n ~ signNumberList => n + toNumbers(signNumberList).sum
-  }
+  override def expr: Parser[Int] = term ~ rep(("+" | "-") ~ term) ^^ sum
 
   def term: Parser[Int] = number ~ rep(("*" | "/") ~ number) ^^ {
     case n0 ~ lst => lst.foldLeft(n0) {
