@@ -16,7 +16,8 @@ Resources
 * [Functional Programming in Scala](http://manning.com/bjarnason/) chapter 9
 * [The Magic Behind Parser Combinators](http://www.codecommit.com/blog/scala/the-magic-behind-parser-combinators) blog post by Daniel Spiewak
 * [Scala eXchange 2012: Daniel Spiewak on Functional Compilers: From CFG to EXE](http://skillsmatter.com/podcast/scala/functional-compilers-from-cfg-to-exe)
-* [Parser combinators (Wikipedia)](http://en.wikipedia.org/wiki/Parser_combinator)
-* [Context-free grammar (Wikipedia)](http://en.wikipedia.org/wiki/Context-free_grammar)
-* [LL parsing (Wikipedia)](http://en.wikipedia.org/wiki/LL_parsing)
-* [Recursive descent parser (Wikipedia)](http://en.wikipedia.org/wiki/Recursive_descent)
+* [Parser combinators (Wikipedia)](https://en.wikipedia.org/wiki/Parser_combinator)
+* [Context-free grammar (Wikipedia)](https://en.wikipedia.org/wiki/Context-free_grammar)
+* [LL parsing (Wikipedia)](https://en.wikipedia.org/wiki/LL_parsing)
+* [Recursive descent parser (Wikipedia)](https://en.wikipedia.org/wiki/Recursive_descent)
+* [EBNF (Wikipedia)](https://en.wikipedia.org/wiki/Ebnf)
