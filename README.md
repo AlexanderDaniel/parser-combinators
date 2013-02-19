@@ -11,6 +11,9 @@ Simple examples using Scala's parser combinators:
 There are corresponding parsers which build abstract syntax trees (AST) instead of calculating the result: AddSubExpressionAST,
 ElementaryExpressionAST, ElementaryWithParenthesesExpressionAST and PowerExpressionAST
 
+NoBacktrackingExpressionEvaluator uses the non-back-tracking sequential composition operator `~!` instead of the
+standard sequential composition `~`.
+
 Resources
 =========
 * [Parsers Scaladoc](http://www.scala-lang.org/api/current/index.html#scala.util.parsing.combinator.Parsers)
