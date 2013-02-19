@@ -9,10 +9,11 @@ class PowerExpressionEvaluator extends ElementaryWithParenthesesExpressionEvalua
 
   override def term: Parser[Int] = pow ~ rep(("*" | "/") ~ pow) ^^ product
 
-  def pow: Parser[Int] = number ~ rep("^"~>number) ^^ {
+  def pow: Parser[Int] = number ~ rep("^"~>number) ^^ power
+
+  def power(in: ~[Int, List[Int]]): Int = in match {
     case n0 ~ lst => (n0 :: lst).foldRight(1) {
       case (n, z) => math.pow(n, z).toInt
     }
   }
-
 }
