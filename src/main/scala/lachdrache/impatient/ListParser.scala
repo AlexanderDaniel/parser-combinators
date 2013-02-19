@@ -4,6 +4,8 @@ import util.parsing.combinator.JavaTokenParsers
 
 /**
  * Exercise 3 from [[http://www.horstmann.com/scala/ Scala for the Impatient]] chapter 19
+ *
+ * @see [[https://github.com/wwagner4/pc-tryout Example using lists in a small configuration language]]
  */
 class ListParser extends JavaTokenParsers {
 
