@@ -3,6 +3,8 @@ package lachdrache.arith
 /**
  * Calculator supporting variables and assignments. Unassigned variables evaluate to zero.
  *
+ * The idea is from [[http://www.horstmann.com/scala/ Scala for the Impatient]] chapter 19, exercise 8
+ *
  * The implementation uses a mutable map for keeping track of the variables :-(
  */
 class VarExprEvaluator extends NoBacktrackingExprEvaluator {
