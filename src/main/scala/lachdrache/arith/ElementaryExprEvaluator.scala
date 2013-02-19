@@ -1,6 +1,6 @@
 package lachdrache.arith
 
-class ElementaryExpressionEvaluator extends AddSubExpressionEvaluator {
+class ElementaryExprEvaluator extends AddSubExprEvaluator {
 
   override def expr: Parser[Int] = term ~ rep(("+" | "-") ~ term) ^^ sum
 

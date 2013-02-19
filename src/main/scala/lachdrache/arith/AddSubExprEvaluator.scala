@@ -7,7 +7,7 @@ import util.parsing.combinator.JavaTokenParsers
  *
  * Please see test suite for examples
  */
-class AddSubExpressionEvaluator extends JavaTokenParsers {
+class AddSubExprEvaluator extends JavaTokenParsers {
   def apply(input: String): Int = parseAll(expr, input) match {
     case Success(result, _) => result
     case NoSuccess(msg, in) => throw new IllegalArgumentException(s"Parsing error: $msg. Input: $in")

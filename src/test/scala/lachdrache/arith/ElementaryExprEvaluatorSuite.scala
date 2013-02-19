@@ -1,8 +1,8 @@
 package lachdrache.arith
 
-class ElementaryExpressionEvaluatorSuite extends AddSubExpressionEvaluatorSuite {
+class ElementaryExprEvaluatorSuite extends AddSubExprEvaluatorSuite {
 
-  override val eval = new ElementaryExpressionEvaluator
+  override val eval = new ElementaryExprEvaluator
 
   test("addition") {
     assert(eval("13+7") === 20)

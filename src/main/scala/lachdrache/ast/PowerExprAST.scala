@@ -1,6 +1,6 @@
 package lachdrache.ast
 
-class PowerExpressionAST extends ElementaryWithParenthesesExpressionAST {
+class PowerExprAST extends ParenthesesExprAST {
 
   override def term: Parser[Expr] = pow ~ rep(("*" | "/") ~ pow) ^^ buildOps
 

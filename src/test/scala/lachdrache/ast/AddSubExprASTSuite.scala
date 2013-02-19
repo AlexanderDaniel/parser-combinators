@@ -2,8 +2,8 @@ package lachdrache.ast
 
 import org.scalatest.FunSuite
 
-class AddSubExpressionASTSuite extends FunSuite {
-  val eval = new AddSubExpressionAST
+class AddSubExprASTSuite extends FunSuite {
+  val eval = new AddSubExprAST
 
   test("number") {
     assert(eval("3") === Num(3))

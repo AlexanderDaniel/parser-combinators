@@ -5,7 +5,7 @@ package lachdrache.arith
  *
  * The idea is from [[http://www.horstmann.com/scala/ Scala for the Impatient]] exercise 2 in chapter 19.
  */
-class PowerExpressionEvaluator extends ElementaryWithParenthesesExpressionEvaluator {
+class PowerExprEvaluator extends ParenthesesExprEvaluator {
 
   override def term: Parser[Int] = pow ~ rep(("*" | "/") ~ pow) ^^ product
 

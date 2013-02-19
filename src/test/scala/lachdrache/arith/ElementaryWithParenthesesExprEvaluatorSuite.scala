@@ -1,8 +1,8 @@
 package lachdrache.arith
 
-class ElementaryWithParenthesesExpressionEvaluatorSuite extends ElementaryExpressionEvaluatorSuite {
+class ElementaryWithParenthesesExprEvaluatorSuite extends ElementaryExprEvaluatorSuite {
 
-  override val eval = new ElementaryWithParenthesesExpressionEvaluator
+  override val eval = new ParenthesesExprEvaluator
 
   test("parentheses around number") {
     assert(eval("(3)") === 3)

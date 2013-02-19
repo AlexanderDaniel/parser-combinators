@@ -6,7 +6,7 @@ package lachdrache.arith
  *
  * Note: Unfortunately there are no non-back-tracking versions of {{{~>}}} and {{{<~}}} available.
  */
-class NoBacktrackingExpressionEvaluator extends PowerExpressionEvaluator {
+class NoBacktrackingExprEvaluator extends PowerExprEvaluator {
 
   override def expr: Parser[Int] = term ~! rep(("+" | "-") ~! term) ^^ sum
   override def term: Parser[Int] = pow ~! rep(("*" | "/") ~! pow) ^^ product

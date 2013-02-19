@@ -1,7 +1,7 @@
 package lachdrache.arith
 
-class PowerExpressionEvaluatorSuite extends ElementaryWithParenthesesExpressionEvaluatorSuite {
-  override val eval = new PowerExpressionEvaluator
+class PowerExprEvaluatorSuite extends ElementaryWithParenthesesExprEvaluatorSuite {
+  override val eval = new PowerExprEvaluator
 
   test("2^3") {
     assert(eval("2^3") === 8)

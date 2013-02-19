@@ -1,5 +1,5 @@
 package lachdrache.arith
 
-class ElementaryWithParenthesesExpressionEvaluator extends ElementaryExpressionEvaluator {
+class ParenthesesExprEvaluator extends ElementaryExprEvaluator {
   override def number: Parser[Int] = super.number | "("~>expr<~")"
 }

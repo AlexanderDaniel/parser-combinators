@@ -1,6 +1,6 @@
 package lachdrache.ast
 
-class ElementaryExpressionAST extends AddSubExpressionAST {
+class ElementaryExprAST extends AddSubExprAST {
 
   override def expr: Parser[Expr] = term ~ rep(("+" | "-") ~ term) ^^ buildOps
 

@@ -2,9 +2,9 @@ package lachdrache.arith
 
 import org.scalatest.FunSuite
 
-class AddSubExpressionEvaluatorSuite extends FunSuite {
+class AddSubExprEvaluatorSuite extends FunSuite {
 
-  val eval = new AddSubExpressionEvaluator
+  val eval = new AddSubExprEvaluator
 
   test("the number 3") {
     assert(eval("3") === 3)

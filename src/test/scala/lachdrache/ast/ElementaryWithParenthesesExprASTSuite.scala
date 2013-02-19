@@ -1,7 +1,7 @@
 package lachdrache.ast
 
-class ElementaryWithParenthesesExpressionASTSuite extends ElementaryExpressionASTSuite {
-  override val eval = new ElementaryWithParenthesesExpressionAST
+class ElementaryWithParenthesesExprASTSuite extends ElementaryExprASTSuite {
+  override val eval = new ParenthesesExprAST
 
   test("number in parentheses") {
     assert(eval("(3)") === Num(3))

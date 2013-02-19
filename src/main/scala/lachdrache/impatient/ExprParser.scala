@@ -6,7 +6,7 @@ import util.parsing.combinator.RegexParsers
  * Example from [[http://www.horstmann.com/scala/ Scala for the Impatient]] chapter 19, section 3.
  *
  * The unit tests demonstrate that subtraction is right-associative. This can be fixed by using {{{rep}}} instead of
- * {{{opt}}} like in [[lachdrache.arith.AddSubExpressionEvaluator]]
+ * {{{opt}}} like in [[lachdrache.arith.AddSubExprEvaluator]]
  */
 class ExprParser extends RegexParsers {
   val number = "[0-9]+".r

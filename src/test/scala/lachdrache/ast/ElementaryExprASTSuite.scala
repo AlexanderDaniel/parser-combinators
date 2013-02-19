@@ -1,7 +1,7 @@
 package lachdrache.ast
 
-class ElementaryExpressionASTSuite extends AddSubExpressionASTSuite {
-  override val eval = new ElementaryExpressionAST
+class ElementaryExprASTSuite extends AddSubExprASTSuite {
+  override val eval = new ElementaryExprAST
 
   test("multiplication") {
     assert(eval("3*2") === Op("*", Num(3), Num(2)))
