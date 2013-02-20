@@ -1,6 +1,8 @@
 package lachdrache.arith
 
-class VarExprEvaluatorSuite extends NoBacktrackingExprEvaluatorSuite {
+import org.scalatest.OneInstancePerTest
+
+class VarExprEvaluatorSuite extends NoBacktrackingExprEvaluatorSuite with OneInstancePerTest {
   override val eval = new VarExprEvaluator
 
   test("one simple assignment with an expression at the end") {
@@ -27,7 +29,7 @@ class VarExprEvaluatorSuite extends NoBacktrackingExprEvaluatorSuite {
     assert(eval("a=3 13") === 13)
   }
 
-  test("TODO") {
+  test("test should be independent of each other") {
     assert(eval("a") === 0)
   }
 

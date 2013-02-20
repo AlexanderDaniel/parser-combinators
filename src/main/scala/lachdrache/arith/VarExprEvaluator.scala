@@ -27,7 +27,6 @@ class VarExprEvaluator extends NoBacktrackingExprEvaluator {
   def name: Parser[String] = """[a-z]+""".r
 
   override def apply(input: String): Int = {
-    vars.clear()
     parseAll(program, input) match {
       case Success(result, _) => result
       case NoSuccess(msg, next) =>
