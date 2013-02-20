@@ -18,6 +18,7 @@ Resources
 =========
 * [Parsers Scaladoc](http://www.scala-lang.org/api/current/index.html#scala.util.parsing.combinator.Parsers)
 * [RegexParsers Scaladoc](http://www.scala-lang.org/api/current/index.html#scala.util.parsing.combinator.RegexParsers) with a nice example similar to ElementaryWithParenthesesExpressionEvaluator
+* [Scala Parser Combinators](http://jim-mcbeath.blogspot.co.at/2008/09/scala-parser-combinators.html) by Jim McBeath is a good read
 * [Programming in Scala](http://www.artima.com/shop/programming_in_scala) chapter 33
 * [Scala for the Impatient](http://www.horstmann.com/scala/) chapter 19
 * [Functional Programming in Scala](http://manning.com/bjarnason/) chapter 9
