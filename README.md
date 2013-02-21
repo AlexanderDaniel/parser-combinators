@@ -14,6 +14,9 @@ ElementaryExprAST, ParenthesesExprAST and PowerExprAST
 NoBacktrackingExprEvaluator uses the non-back-tracking sequential composition operator `~!` instead of the
 standard sequential composition `~`.
 
+IntoExperiment uses the `into` combinator which can also be written as `>>` to parse a list which is prefixed with the number
+of expected elements.
+
 Resources
 =========
 * [Parsers Scaladoc](http://www.scala-lang.org/api/current/index.html#scala.util.parsing.combinator.Parsers)
