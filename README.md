@@ -33,3 +33,4 @@ Resources
 * [Recursive descent parser (Wikipedia)](https://en.wikipedia.org/wiki/Recursive_descent)
 * [EBNF (Wikipedia)](https://en.wikipedia.org/wiki/Ebnf)
 * [Play uses parser combinators for parsing the templates](https://github.com/playframework/Play20/blob/master/framework/src/templates-compiler/src/main/scala/play/templates/ScalaTemplateCompiler.scala). Thanks to [Manuel Bernhardt](https://twitter.com/elmanu) for the link
+* [parboiled uses Parsing expression grammars (PEGs) instead of EBNF](https://github.com/sirthias/parboiled/wiki). Thanks to Patrick Martini for sharing
