@@ -17,6 +17,9 @@ standard sequential composition `~`.
 IntoExperiment uses the `into` combinator which can also be written as `>>` to parse a list which is prefixed with the number
 of expected elements.
 
+The [ScoreSheetParser](https://github.com/AlexanderDaniel/bowling-kata/blob/master/src/main/scala/lachdrache/bowling/parser/ScoreSheetParser.scala) in the
+[bowling-kata](https://github.com/AlexanderDaniel/bowling-kata) repo parsers a bowling score sheet.
+
 Resources
 =========
 * [Parsers Scaladoc](http://www.scala-lang.org/api/current/index.html#scala.util.parsing.combinator.Parsers)
