@@ -3,18 +3,19 @@ Examples using Scala's parser combinators
 
 Simple examples using Scala's parser combinators:
 
-* AddSubExprEvaluator can calculate the result of arithmetic expressions with addition and subtraction, e.g. `3+7-10+15+5-7`
-* ElementaryExprEvaluator can do elementary arithmetic, e.g. `3 + 5*2 - 100/10 + 2*2*2*2`
-* ParenthesesExprEvaluator can do elementary arithmetic with parenthesis, e.g. `(3+2)*(2+3) - 5*(10-5)`
-* PowerExprEvaluator also support the power operation with the `^` operator, e.g. `7+3*2^2`
+* [AddSubExprEvaluator](src/main/scala/lachdrache/arith/AddSubExprEvaluator.scala) can calculate the result of arithmetic expressions with addition and subtraction, e.g. `3+7-10+15+5-7`
+* [ElementaryExprEvaluator](src/main/scala/lachdrache/arith/ElementaryExprEvaluator.scala) can do elementary arithmetic, e.g. `3 + 5*2 - 100/10 + 2*2*2*2`
+* [ParenthesesExprEvaluator](src/main/scala/lachdrache/arith/ParenthesesExprEvaluator.scala) can do elementary arithmetic with parenthesis, e.g. `(3+2)*(2+3) - 5*(10-5)`
+* [PowerExprEvaluator](src/main/scala/lachdrache/arith/PowerExprEvaluator.scala) also support the power operation with the `^` operator, e.g. `7+3*2^2`
 
-There are corresponding parsers which build abstract syntax trees (AST) instead of calculating the result: AddSubExprAST,
-ElementaryExprAST, ParenthesesExprAST and PowerExprAST
+There are corresponding parsers which build abstract syntax trees (AST) instead of calculating the result: [AddSubExprAST](src/main/scala/lachdrache/ast/AddSubExprAST.scala),
+[ElementaryExprAST](src/main/scala/lachdrache/ast/ElementaryExprAST.scala), [ParenthesesExprAST](src/main/scala/lachdrache/ast/ParenthesesExprAST.scala) and
+[PowerExprAST](src/main/scala/lachdrache/ast/PowerExprAST.scala).
 
-NoBacktrackingExprEvaluator uses the non-back-tracking sequential composition operator `~!` instead of the
+[NoBacktrackingExprEvaluator](src/main/scala/lachdrache/arith/NoBacktrackingExprEvaluator.scala) uses the non-back-tracking sequential composition operator `~!` instead of the
 standard sequential composition `~`.
 
-IntoExperiment uses the `into` combinator which can also be written as `>>` to parse a list which is prefixed with the number
+[IntoExperiment](src/main/scala/lachdrache/morecombinators/IntoExperiment.scala) uses the `into` combinator which can also be written as `>>` to parse a list which is prefixed with the number
 of expected elements.
 
 The [ScoreSheetParser](https://github.com/AlexanderDaniel/bowling-kata/blob/master/src/main/scala/lachdrache/bowling/parser/ScoreSheetParser.scala) in the
